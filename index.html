@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏆 Beating Shawn - Anti-Oskar Deck 🏆</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    
+    <header>
+        <div class="trophy-container">
+            <span class="trophy">🏆</span>
+            <div class="header-text">
+                <h1>BEATING SHAWN</h1>
+                <p class="subtitle">The Ultimate Anti-Oskar Graveyard Annihilator</p>
+            </div>
+            <span class="trophy">🏆</span>
+        </div>
+        <div class="deck-info">
+            <div class="info-card">
+                <span class="label">Commander</span>
+                <span class="value">Grand Arbiter Augustin IV</span>
+            </div>
+            <div class="info-card">
+                <span class="label">Format</span>
+                <span class="value">Commander / EDH</span>
+            </div>
+            <div class="info-card salt-meter">
+                <span class="label">Salt Level</span>
+                <span class="value">🧂 MAXIMUM 🧂</span>
+            </div>
+            <div class="info-card">
+                <span class="label">Cards</span>
+                <span class="value" id="card-count">100</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="strategy-banner">
+            <h2>⚔️ Mission: Destroy Oskar, Rubbish Reclaimer ⚔️</h2>
+            <p>Exile graveyards. Block casting. Punish wheels. Tax everything. Make Shawn cry.</p>
+        </div>
+
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All Cards</button>
+            <button class="filter-btn" data-filter="commander">Commander</button>
+            <button class="filter-btn" data-filter="graveyard_hate">Graveyard Hate</button>
+            <button class="filter-btn" data-filter="anti_cast">Anti-Cast</button>
+            <button class="filter-btn" data-filter="anti_wheel">Anti-Wheel</button>
+            <button class="filter-btn" data-filter="stax">Stax & Tax</button>
+            <button class="filter-btn" data-filter="removal">Removal</button>
+            <button class="filter-btn" data-filter="card_advantage">Card Advantage</button>
+            <button class="filter-btn" data-filter="ramp">Ramp</button>
+            <button class="filter-btn" data-filter="win_conditions">Win Cons</button>
+            <button class="filter-btn" data-filter="lands">Lands</button>
+        </div>
+
+        <div class="view-toggle">
+            <button class="view-btn active" data-view="grid">🖼️ Grid</button>
+            <button class="view-btn" data-view="list">📋 List</button>
+        </div>
+
+        <div id="loading" class="loading">
+            <div class="loader"></div>
+            <p>Loading cards from Scryfall...</p>
+        </div>
+
+        <div id="card-grid" class="card-grid"></div>
+
+        <div class="combos-section">
+            <h2>💀 Key Combos to Crush Shawn 💀</h2>
+            <div class="combo-cards">
+                <div class="combo-card">
+                    <h3>Instant Kill</h3>
+                    <p><strong>Helm of Obedience + Rest in Peace</strong></p>
+                    <p>Mill entire library to exile. Game over.</p>
+                </div>
+                <div class="combo-card">
+                    <h3>Hand Lock</h3>
+                    <p><strong>Narset/Notion Thief + Teferi's Puzzle Box</strong></p>
+                    <p>Opponents discard hands, draw nothing.</p>
+                </div>
+                <div class="combo-card">
+                    <h3>Total Lockdown</h3>
+                    <p><strong>Stasis + Smothering Tithe</strong></p>
+                    <p>Nothing untaps. You make treasures. Shawn suffers.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Built with spite and Scryfall API | Dedicated to defeating Shawn's Oskar deck</p>
+        <p class="disclaimer">🧂 Warning: Playing this deck may result in loss of friends 🧂</p>
+    </footer>
+
+    <div id="card-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-image" src="" alt="Card">
+            <div id="modal-info"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
